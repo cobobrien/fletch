@@ -1,0 +1,2 @@
+[run]
+omit = venv/*,test_pelican.py,conftest.py,app.py
