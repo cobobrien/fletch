@@ -36,3 +36,28 @@ class BooksResource:
 
     def post(self, req, resp):
         resp.text = "Endpoint to create a book"
+
+
+@app.route("/template")
+def template_handler(req, resp):
+    resp.body = app.template(
+        "index.html", context={"name": "Pelican", "title": "Best Framework"}).encode()
+
+
+@app.route("/exception")
+def exception_throwing_handler(request, response):
+    raise AssertionError("This handler should not be used.")
+
+
+def custom_exception_handler(request, response, exception_cls):
+    response.text = str(exception_cls)
+
+
+app.add_exception_handler(custom_exception_handler)
+
+
+def handler(req, resp):
+    resp.text = "sample"
+
+
+app.add_route("/sample", handler)
