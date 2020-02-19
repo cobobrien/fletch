@@ -15,6 +15,7 @@ requests-wsgi-adapter = "*"
 pytest-cov = "*"
 jinja2 = "*"
 whitenoise = "*"
+twine = "*"
 
 [requires]
 python_version = "3.7"
