@@ -3,6 +3,8 @@
 ![purpose](https://img.shields.io/badge/purpose-learning-green.svg)
 ![PyPI](https://img.shields.io/pypi/v/fletch.svg)
 
+[Fletch - PyPi](https://pypi.org/project/fletch/ "Fletch Package")
+
 Fletch is a Python web framework built for learning purposes.
 
 It's a WSGI framework and can be used with any WSGI application server such as Gunicorn.
