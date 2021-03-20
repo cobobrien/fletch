@@ -14,7 +14,7 @@ REQUIRES_PYTHON = ">=3.6.0"
 VERSION = "0.0.2"
 
 REQUIRED = [
-    "Jinja2==2.10.3",
+    "Jinja2==2.11.3",
     "parse==1.12.1",
     "requests==2.22.0",
     "requests-wsgi-adapter==0.4.1",
